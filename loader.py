@@ -3,6 +3,7 @@ import torch
 import os
 import torch.utils.data as data
 from PIL import Image
+import cv2
 import numpy as np
 import argparse
 import time
@@ -12,8 +13,14 @@ from models.utils import resizePadding
 
 
 def img_loader(path):
-    img = Image.open(path).convert('L')
+    img = cv2.imread(path)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     return img
+    
+def img_loader2(path):
+    img = Image.open(path).convert('RGB')
+    return img
+
 
 def train_transform(path):
     pass
