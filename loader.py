@@ -12,12 +12,12 @@ import uuid
 from models.utils import resizePadding
 
 
-def img_loader(path):
+def img_loader2(path):
     img = cv2.imread(path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     return img
-    
-def img_loader2(path):
+
+def img_loader(path):
     img = Image.open(path).convert('RGB')
     return img
 
