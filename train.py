@@ -84,7 +84,7 @@ if opt.cuda:
     image = image.cuda()
     criterion = criterion.cuda()
 
-summary(crnn.cnn, (3, opt.imgH, opt.imgW))
+summary(crnn.cnn, (1, opt.imgH, opt.imgW))
 
 image = Variable(image)
 text = Variable(text)
