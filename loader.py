@@ -12,7 +12,7 @@ from models.utils import resizePadding
 
 
 def img_loader(path):
-    img = Image.open(path).convert('L')
+    img = Image.open(path).convert('RGB')
     return img
 
 def train_transform(path):
