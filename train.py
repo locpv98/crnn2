@@ -35,7 +35,7 @@ parser.add_argument('--pretrained', default='', help="path to pretrained model (
 parser.add_argument('--alphabet', type=str, required=True, help='path to char in labels')
 parser.add_argument('--expr_dir', required=True, type=str, help='Where to store samples and models')
 parser.add_argument('--displayInterval', type=int, default=1, help='Interval to be displayed')
-parser.add_argument('--n_test_disp', type=int, default=10, help='Number of samples to display when test')
+parser.add_argument('--n_test_disp', type=int, default=20, help='Number of samples to display when test')
 parser.add_argument('--valInterval', type=int, default=1, help='Interval to be displayed')
 parser.add_argument('--saveInterval', type=int, default=1, help='Interval to be displayed')
 parser.add_argument('--lr', type=float, default=0.001, help='learning rate for Critic, not used by adadealta')
