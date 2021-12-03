@@ -1,6 +1,6 @@
 import random
 import string
-save_path = './trdg/valid.txt'
+save_path = './label.txt'
 
 def rand_int(n):
     letters = string.digits
@@ -9,7 +9,7 @@ def rand_int(n):
 
 character = string.ascii_uppercase
 f = open(save_path, "w")
-for i in range(2000):
+for i in range(100000):
     res = str(random.randint(11, 99))+str(random.choice(character))+'-'+rand_int(3)+'.'+rand_int(2)+'\n'
     # res = str(random.randint(11, 99))
     f.write(res)
