@@ -18,7 +18,7 @@ def img_loader2(path):
     return img
 
 def img_loader(path):
-    img = Image.open(path).convert('RGB')
+    img = Image.open(path).convert('L')
     return img
 
 
