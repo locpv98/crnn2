@@ -46,7 +46,7 @@ def resizePadding(img, width, height):
 
     # padding image
     if desired_w != None and desired_w > new_w:
-        new_img = Image.new("L", (desired_w, desired_h), color=255)
+        new_img = Image.new("RGB", (desired_w, desired_h), color=255)
         new_img.paste(img, (0, 0))
         img = new_img
     
